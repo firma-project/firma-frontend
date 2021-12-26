@@ -17,7 +17,8 @@ The Firma project is yet another corporate piece of software to engage employees
 
 ### How to Run
 
-First, clone the backend repository and run. Follow the instructions in their repository.
+First, clone the backend repository and run. Follow the instructions here:
+https://github.com/lesimoes/firma-backend
 
 Finally, just execute 
 ```bash
