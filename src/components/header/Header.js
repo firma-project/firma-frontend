@@ -7,8 +7,6 @@ import UserContext from '../../contexts/UserContext';
 export function Header() {
 
 
-  const { user } = useContext(UserContext);
-
   return (
     <Container>
       <img src={logo} />
@@ -23,12 +21,19 @@ export function Header() {
 
 const Container = styled.div`
   display: flex;
+  justify-content: space-around;
   flex-direction: row;
   width: 100%;
 
   img {
-    width: 12%;
+    width: 120px;
   }
+
+  @media screen and (max-width: 720px) {
+        img {
+          display: none;
+        }
+    }
 `;
 
 const Menu = styled.div`
@@ -44,4 +49,12 @@ const Menu = styled.div`
     cursor: pointer;
   }
 
+  @media screen and (max-width: 720px) {
+    width: 100%;
+    justify-content: space-around;
+    h2 {
+      margin-right: 12px;
+    }
+      
+  }
 `;

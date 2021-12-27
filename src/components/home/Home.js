@@ -42,13 +42,23 @@ const Page = styled.div`
 
 const CenterContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 80vw;
   flex-wrap: wrap;
   margin: 20px;
   div {
     flex-basis: 30%;
   }
+
+  @media screen and (max-width: 1140px) {
+        width: 90%;
+        justify-content: flex-start;
+    }
+
+  @media screen and (max-width: 720px) {
+        width: 90%;
+        justify-content: center;
+    }
 `;
 
 const SideContainer = styled.div`

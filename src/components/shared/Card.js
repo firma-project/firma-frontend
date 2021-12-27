@@ -9,10 +9,10 @@ export function Card ({ profile, name, ups }) {
         <CardContainer>
             <Avatar image={profile} />
             <h3>{ name }</h3>
-            <StarIcon>
+            <LoveIcon>
                 <h3>{ ups }</h3>
                 <img src={heart} />
-            </StarIcon>
+            </LoveIcon>
         </CardContainer>
     )
 }
@@ -27,8 +27,8 @@ const CardContainer = styled.div`
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background: #f0efeb;
-    margin: 2px;
-    min-width: 20%;
+    margin: 8px 10px;
+    min-width: 300px;
 
     cursor: pointer;
 
@@ -37,13 +37,13 @@ const CardContainer = styled.div`
     }
 `
 
-const StarIcon = styled.div`
+const LoveIcon = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
 
     img {
-        width: 32px;
+        max-width: 40px;
     }
     
 `
