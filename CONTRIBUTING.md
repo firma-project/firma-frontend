@@ -8,12 +8,20 @@ Não tem mistério - É bem simples, sério! Não tenha medo.
 4. Faça um push com o código para um nova branch (veja o padrão de nome de branchs)
 5. Abra a PR e cruze os dedos. 🤞
 
+
+## Vídeo tutorial
+<br>
+
+[<img src="https://img.youtube.com/vi/6lLHOrOTEHc/maxresdefault.jpg" width="50%">](https://youtu.be/6lLHOrOTEHc)
+
+
 ## Nomes de Branchs
    * É uma feature? feat/blablabla
    * É um fix? fix/piririPororo
    * É um teste? test/bloblo 
 
-<br><br><br>
+<br><br>
+
 
 # How to Contributing? - English version
 
