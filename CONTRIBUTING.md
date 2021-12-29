@@ -1,4 +1,29 @@
-# How to Contributing?
+# Como contribuir - Português
+
+Não tem mistério - É bem simples, sério! Não tenha medo.
+
+1. Clone esse repositório
+2. Olhe o nosso roadmap ou as issues abertas e escolha uma (apenas uma por vez)
+3. Escreva seu código... (Essa é a melhor parte)
+4. Faça um push com o código para um nova branch (veja o padrão de nome de branchs)
+5. Abra a PR e cruze os dedos. 🤞
+
+
+## Vídeo tutorial
+<br>
+
+[<img src="https://img.youtube.com/vi/6lLHOrOTEHc/maxresdefault.jpg" width="50%">](https://youtu.be/6lLHOrOTEHc)
+
+
+## Nomes de Branchs
+   * É uma feature? feat/blablabla
+   * É um fix? fix/piririPororo
+   * É um teste? test/bloblo 
+
+<br><br>
+
+
+# How to Contributing? - English version
 
 There is no mystery - It's simple, really! Don't be afraid.
 
