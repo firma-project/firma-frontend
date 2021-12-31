@@ -17,7 +17,7 @@ export function CardStore ({ image, name, price, available }) {
                     <TextStyled>Hearts Price:</TextStyled>
                     <LoveIcon>
                         <TextStyled>{ price }</TextStyled>
-                        <img src={heart} />
+                        <img src={heart} alt='hearts'/>
                     </LoveIcon>
                 </CardColumnContainer>
                 <CardColumnContainer>

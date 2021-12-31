@@ -5,7 +5,7 @@ export default function AvatarProduct({ image }) {
 
     return (
         <ProductAvatar>
-            <img src={image} />
+            <img src={image} alt=''/>
         </ProductAvatar>
     )
 }

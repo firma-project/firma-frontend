@@ -1,15 +1,12 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import logo from '../../assets/logo.png';
-import UserContext from '../../contexts/UserContext';
-import { useNavigate } from 'react-router-dom';
 
 export function Header() {
-  const navigate = useNavigate();
 
   return (
     <Container>
-      <img src={logo} />
+      <img src={logo} alt='logo'/>
       <Menu>
         <a href='/'><h2 >Home</h2></a>
         <h2>Votes</h2>

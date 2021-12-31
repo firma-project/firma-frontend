@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { CardStore } from '../shared/CardStore';
 import { Ranking } from '../ranking/Ranking';
 import { Header } from '../header/Header';
-import { getUsers } from '../../services/firme.service';
 
 export function Store() {
 
