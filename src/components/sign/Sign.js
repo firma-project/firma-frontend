@@ -46,7 +46,7 @@ export function Sign () {
         <Title>
             Welcome to:
         </Title>
-        <img src={logo} />
+        <img src={logo} alt='logo'/>
         <Button onClick={handleSignIn}>Enter</Button>
         </Container>
     )

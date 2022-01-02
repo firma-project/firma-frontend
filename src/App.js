@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './components/home/Home';
 import { Sign } from './components/sign/Sign';
 import UserContext from './contexts/UserContext';
+import { Store } from './components/store/Store';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route exact path="/sign" element={<Sign />} />
+            <Route exact path="/store" element={<Store />} />
             <Route exact path="/" element={<Home />} />
           </Routes>
         </BrowserRouter>

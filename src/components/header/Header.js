@@ -1,19 +1,16 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import logo from '../../assets/logo.png';
-import UserContext from '../../contexts/UserContext';
-
 
 export function Header() {
 
-
   return (
     <Container>
-      <img src={logo} />
+      <img src={logo} alt='logo'/>
       <Menu>
-        <h2>Home</h2>
+        <a href='/'><h2 >Home</h2></a>
         <h2>Votes</h2>
-        <h2>Store</h2>
+        <a href='/store'><h2 >Store</h2></a>
       </Menu>
     </Container>
   );
