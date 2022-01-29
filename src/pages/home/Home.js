@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { Card } from '../shared/Card';
-import { Ranking } from '../ranking/Ranking';
-import { Header } from '../header/Header';
+import { Card } from '../../components/shared/Card';
+import { Ranking } from '../../components/ranking/Ranking';
 import { getUsers } from '../../services/firme.service';
 
 export function Home() {
@@ -16,16 +15,12 @@ export function Home() {
   return (
     <Page>
       <Container>
-        <Header></Header>
         <CenterContainer>
           {users.map((user) => (
             <Card key={user._id} id={user._id} name={user.name} profile={user.profile} ups={user.ups} />
           ))}
         </CenterContainer>
       </Container>
-      <SideContainer>
-        <Ranking></Ranking>
-      </SideContainer>
     </Page>
   );
 }
@@ -61,10 +56,3 @@ const CenterContainer = styled.div`
     }
 `;
 
-const SideContainer = styled.div`
-  width: 20vw;
-  display: flex;
-  @media (max-width: 1000px) {
-    display: none;
-  }
-`;
