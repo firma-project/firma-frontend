@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { Card } from '../shared/Card';
-import { Ranking } from '../ranking/Ranking';
-import { Header } from '../header/Header';
+import { Card } from '../../components/shared/Card';
+import { Ranking } from '../../components/ranking/Ranking';
+import { Header } from '../../components/header/Header';
 import { getUsers } from '../../services/firme.service';
 
 export function Home() {

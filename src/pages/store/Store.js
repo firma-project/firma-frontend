@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { CardStore } from '../shared/CardStore';
-import { Ranking } from '../ranking/Ranking';
-import { Header } from '../header/Header';
+import { CardStore } from '../../components/shared/CardStore';
+import { Ranking } from '../../components/ranking/Ranking';
+import { Header } from '../../components/header/Header';
 
 export function Store() {
 
