@@ -37,16 +37,12 @@ const mockyData = [
   return (
     <Page>
       <Container>
-        <Header></Header>
         <CenterContainer>
           {mockyData.map((product) => (
             <CardStore key={product.id} id={product._id} name={product.productName} image={product.image} price={product.price} available={product.available}/>
           ))}
         </CenterContainer>
       </Container>
-      <SideContainer>
-        <Ranking></Ranking>
-      </SideContainer>
     </Page>
   );
 }
@@ -82,10 +78,3 @@ const CenterContainer = styled.div`
     }
 `;
 
-const SideContainer = styled.div`
-  width: 20vw;
-  display: flex;
-  @media (max-width: 1000px) {
-    display: none;
-  }
-`;

@@ -2,12 +2,13 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import { Sidebar } from '../components/sidebar/Sidebar';
 import { Header } from '../components/header/Header';
-
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
+import { main } from '../styles/Theme';
 
 export function MainLayout({ children }) {
   return (
     <React.Fragment>
+      <ThemeProvider theme={main}>
       <Container>
         <SidebarContainer>
           <Sidebar />
@@ -20,6 +21,7 @@ export function MainLayout({ children }) {
           <Outlet />
         </ContentContainer>
       </Container>
+      </ThemeProvider>
     </React.Fragment>
   );
 }

@@ -46,13 +46,17 @@ const MenuItems = styled.div`
     }
 
     div:hover {
-        background-color: #096DD9;
+        background-color: ${props => props.theme.blue1};
 
         a, h3 {
         color: white;
         } 
 
         color: white;
+    }
+
+    div:active {
+        background-color: ${props => props.theme.blue3};
     }
 
 

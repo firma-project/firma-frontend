@@ -1,52 +1,62 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo from '../../assets/logo.png';
+import { FiBell } from 'react-icons/fi';
+import Avatar from '../../styles/Avatar';
+import avatar from '../../assets/Irmao-do-jorel.png';
 
 export function Header() {
-
   return (
     <Container>
-      dsdsd
+      <InputContainer />
+      <ActionContainer>
+        <FiBell />
+        <section>
+          <h4>Irmão do Jorel</h4>
+          <h6>Admin</h6>
+        </section>
+        <Avatar image={avatar} radius={'50%'} maxWidth={'36px'} border={true} />
+      </ActionContainer>
     </Container>
   );
 }
 
 const Container = styled.div`
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  width: 100%;
-
-  img {
-    width: 120px;
-  }
-
-  @media screen and (max-width: 720px) {
-        img {
-          display: none;
-        }
-    }
-`;
-
-const Menu = styled.div`
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 60%;
-  margin-left: 40px;
+  width: 100%;
+`;
 
-  h2 {
-    font-family: 'Press Start 2P', cursive;
-    cursor: pointer;
+const InputContainer = styled.input`
+  height: 20px;
+  flex-grow: 3;
+  border: solid 1px ${props => props.theme.gray3};
+  border-radius: 2px;
+  margin: 0 2% 0 2%;
+`;
+
+const ActionContainer = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+
+  color: ${(props) => props.theme.gray1};
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 8px 0 14px;
   }
 
-  @media screen and (max-width: 720px) {
-    width: 100%;
-    justify-content: space-around;
-    h2 {
-      margin-right: 12px;
-    }
-      
+  h4 {
+    color: ${(props) => props.theme.gray1};
+    margin: 0;
+    margin-top: 8%;
+  }
+  h6 {
+    margin: 0;
   }
 `;
