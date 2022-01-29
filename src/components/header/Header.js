@@ -6,12 +6,7 @@ export function Header() {
 
   return (
     <Container>
-      <img src={logo} alt='logo'/>
-      <Menu>
-        <a href='/'><h2 >Home</h2></a>
-        <h2>Votes</h2>
-        <a href='/store'><h2 >Store</h2></a>
-      </Menu>
+      dsdsd
     </Container>
   );
 }

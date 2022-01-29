@@ -6,6 +6,7 @@ import { Home } from './pages/home/Home';
 import { Sign } from './pages/sign/Sign';
 import UserContext from './contexts/UserContext';
 import { Store } from './pages/store/Store';
+import { MainLayout } from './layouts/MainLayout';
 
 function App() {
 
@@ -18,8 +19,11 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route exact path="/sign" element={<Sign />} />
-            <Route exact path="/store" element={<Store />} />
-            <Route exact path="/" element={<Home />} />
+            <Route element={<MainLayout />}>
+              <Route exact path="/store" element={<Store />} />
+              <Route exact path="/" element={<Home />} />
+            </Route>
+
           </Routes>
         </BrowserRouter>
       </UserContext.Provider>
